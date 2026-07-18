@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 698.97 567.82">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #377a53;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 24px;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="317.97 42.82 541.76 147 538.67 422.29 317.97 524.82 90.17 419.19 90.17 137.72 317.97 42.82"/>
+  <polyline class="cls-1" points="538.33 156.28 317.97 247.82 90.17 147"/>
+  <line class="cls-1" x1="317.97" y1="511.99" x2="317.97" y2="255.26"/>
+</svg>
