@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3DCG FIRST STEP | ソフトウェア案内</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/software.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="menu">
+        <a href="index.html">TOP</a>
+        <a href="#learning">LEARNING</a>
+        <a href="#recipe">RECIPE</a>
+        <a href="#addon">ADD-ON</a>
+        <a href="#hotkeys">HOTKEYS</a>
+    </nav>
+
+    <div class="site-top">
+        <h1>3DCG FIRST STEP</h1>
+    </div>
+
+    <div class="top">
+        <h2>ソフトウェアの案内</h2>
+    </div>
+
+    <div class="step-indent">
+        <span class="step-num">
+            STEP1
+        </span>
+        <h2>
+            blenderのダウンロードとセットアップ
+        </h2>
+    </div>
+    <hr>
+    <div class="step-contents">
+        以下のサイトから「blender」をダウンロードします。
+        <br><br>
+        <a id="link" href="https://www.blender.org/download/">https://www.blender.org/download/</a>
+        <br>
+        <img src="images/blender_download.jpg" alt="blenderダウンロードサイトの画面">
+        <br>
+        その後ダウンロードされた「blender-5.2.0(バージョン名)-windows-x64.msi」を開き、<br>
+        セットアップウィザードの指示に従ってインストールを行うことでセットアップが完了します。
+    </div>
+
+    <div class="step-indent">
+        <span class="step-num">
+            STEP2
+        </span>
+        <h2>
+            起動後の日本語設定
+        </h2>
+    </div>
+    <hr>
+    <div class="step-contents">
+        <img src="images/blender_info1.jpg" alt="blenderの設定">
+        <br>
+        起動後、左上のメニューバーの「Edit」から「Prefarence」を選択します。<br>
+
+        <img src="images/blender_info2.jpg" alt="blenderの言語設定">
+        <br>
+        「Interface」のタブにある「languege」を日本語に設定します。<br>
+        設定が保存されない場合は、設定画面左下の三本線をクリックし、自動保存にチェックを入れてください。
+    </div>
+
+    <div class="step-indent">
+        <span class="step-num">
+            STEP3
+        </span>
+        <h2>
+            blenderの基本操作
+        </h2>
+    </div>
+    <hr>
+    <div class="step-contents">
+        <img src="images/blender_info3.jpg" alt="blenderの基本操作">
+        <br>
+        blenderでは、画面左側にあるツールバーからツールを選択することでオブジェクトを操作することができます。<br>
+        ツールには移動、回転、スケールなどの種類があり、選択するとオブジェクト中央に「ギズモ」と呼ばれるコントローラーが出現します。<br>
+        ギズモはドラッグすることで、<span class="x">X軸(横方向)</span>、<span class="y">Y軸(奥行き方向)</span>、<span
+            class="z">Z軸(高さ方向)</span>を基準に動かすことができます。
+        <br><br>
+        また、以下のようなショートカットで操作することもできます。<br><br>
+        移動:<span class="key">G</span>　　回転:<span class="key">R</span>　　スケール:<span class="key">S</span>
+        <br><br>それぞれ、Grab、Rotate、Scaleの頭文字です。<span class="key">X</span><span class="key">Y</span><span
+            class="key">Z</span>で軸を固定できます。
+        <br>圧倒的に早く操作できるので、慣れてきたらこちらも使っていきましょう。<br>
+        <img src="images/blender_info5.jpg" alt="透過表示">
+        <br>
+        右上のアイコンから「透過表示切り替え」や「ビュー切り替え」を行うことができます。
+        <br>
+        <img src="images/blender_info6.jpg" alt="ビュー切り替え">
+        <br>
+        ビュー切り替えでは、線のみで表示される「ワイヤーフレーム」、形状がわかりやすい「ソリッドビュー」、<br>外観や質感を確認しやすい「マテリアルビュー」、レンダリング(書き出し)時の設定で表示される「レンダービュー」の4種類があります。
+        <br>
+    </div>
+
+    <div class="step-indent">
+        <span class="step-num">
+            STEP4
+        </span>
+        <h2>
+            オブジェクトモードと編集モード
+        </h2>
+    </div>
+    <hr>
+    <div class="step-contents">
+        <img src="images/blender_info7.jpg" alt="モード切替">
+        <br>
+        右上のモード選択メニュー、もしくは<span class="key">Tab</span>で編集モードに切り替えることができます。
+        <br>
+        <img src="images/blender_info8.jpg" alt="編集モード画面">
+        <br>
+        編集モードでは、オブジェクトの頂点や辺、面といった要素を編集することができます。<br>
+        左上で頂点・辺・面の選択を切り替えられます。
+    </div>
+
+    <div class="step-indent">
+        <span class="step-num">
+            STEP4
+        </span>
+        <h2>
+            データの保存
+        </h2>
+    </div>
+    <hr>
+    <div class="step-contents">
+        <img src="images/blender_info9.jpg" alt="モード切替">
+        <br>
+        右上のメニューバーの「ファイル」から「保存」(上書き保存)または「名前を付けて保存」ができます。<br>
+        保存は以下のショートカットでも可能です。<br><br>
+        保存：<span class="key">Ctrl</span>+<span class="key">S</span><br><br>
+        名前を付けて保存：<span class="key">Ctrl</span>+<span class="key">Space</span>+<span class="key">S</span><br>
+        <br>
+        作業中に突然ソフトが落ちてしまうこともあるので、こまめな保存を心がけましょう。<br>
+        万が一保存せずに閉じてしまった場合は、メニューバーの「ファイル」>「復元」>「自動保存」から、オートセーブされたデータを復元できます。
+    </div>
+
+    <div class="step-contents">
+        <a href="index.html" class="button">←トップへ戻る</a>
+    </div>
+    <footer>
+        web演習最終課題にて作成
+    </footer>
+</body>
