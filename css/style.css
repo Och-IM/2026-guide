@@ -132,6 +132,7 @@ h1 {
   text-align: center;
   margin: 5rem;
   margin-bottom: 15rem;
+  padding: 0 6vw 0 6vw;
 
   color: white;
   font-size: max(1vw, 1.6rem);
@@ -142,13 +143,45 @@ h1 {
   color: var(--main-color);
 }
 
-#modeling {}
+#modeling {
+    text-decoration: none;
+    background: #67eb9e42;
+    color: #67eb9e;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    transition: 0.2s;
+}
 
-#modifieer {}
+#modifier {
+    text-decoration: none;
+    background: #757cd842;
+    color: #a5abff;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    transition: 0.2s;
+}
 
-#material {}
+#material {
+    text-decoration: none;
+    background: #e782ba42;
+    color: #e782ba;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    transition: 0.2s;
+}
 
-#animation {}
+#animation {
+    text-decoration: none;
+    background: #f0c15d42;
+    color: #f0c15d;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    transition: 0.2s;
+}
+
+#modeling:hover,#modifier:hover,#material:hover,#animation:hover{
+  color: white;
+}
 
 .step-contents img {
   margin: 2rem;
@@ -178,6 +211,12 @@ hr {
       transparent,
       #999,
       transparent);
+}
+
+#wide-hr {
+    width: 100%;
+    background: var(--main-color);
+    margin-top: 0.5rem;
 }
 
 .x {

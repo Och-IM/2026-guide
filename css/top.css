@@ -55,29 +55,6 @@ h1 {
   text-shadow: 1rem 1rem #ee00ff7c;
 }
 
-.menu :hover {
-  background-color: #fff;
-  color: var(--dark-color);
-}
-
-.menu a {
-  padding: 1.4rem;
-  border-radius: 100px;
-  flex: 1;
-  text-align: center;
-  text-decoration: none;
-  color: rgb(195, 255, 0);
-  font-weight: bold;
-
-  font-size: clamp(12px, 1.5vw, 18px);
-  white-space: nowrap;
-  transition: 0.3s;
-}
-
-.menu a :hover {
-  color: var(--dark-color);
-}
-
 .about {
   background-color: var(--bg-color);
   text-align: center;
@@ -100,28 +77,6 @@ h1 {
   color: white;
   font-size: 2rem;
   line-height: 3rem;
-}
-
-.button {
-  margin: 2rem;
-  display: inline-block;
-  padding: 1.6rem 5rem;
-  background-color: var(--text-color);
-  color: var(--dark-color);
-  font-size: 1.8em;
-
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-
-  border-radius: 100px;
-
-  transition: 0.3s;
-}
-
-.button:hover {
-  background-color: var(--main-color);
-  color: var(--bg-color);
 }
 
 .recipe {
@@ -159,62 +114,6 @@ h1 {
   display: none;
 }
 
-.card {
-  width: min(50vw, 450px);
-  width: min(60vw, 500px);
-  border-radius: 2rem;
-  background: #fff;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .12);
-  flex-shrink: 0;
-
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  transition: transform .3s ease, box-shadow .3s ease;
-
-}
-
-.card:hover {
-  transform: scale(1.02);
-
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, .2);
-}
-
-h2.title {
-  color: var(--text-color);
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-.time {
-  margin: 2rem;
-  font-weight: bold;
-
-  font-size: 1.5rem;
-  color: #999999;
-}
-
-.img-flame {
-  overflow: hidden;
-  border-radius: 2rem 2rem 0 0;
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-  transition: transform .4s ease;
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
-
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
-}
-
-.card:hover img {
-  transform: scale(1.1);
-}
-
 .arrow {
 
   position: absolute;
@@ -245,6 +144,62 @@ h2.title {
 
 .right {
   right: 1rem;
+}
+
+.card {
+  width: min(60vw, 500px);
+  border-radius: 2rem;
+  background: #fff;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .12);
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  transition: transform .3s ease, box-shadow .3s ease;
+
+}
+
+.card:hover {
+  transform: scale(1.02);
+
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, .2);
+}
+
+h2.title {
+  color: var(--text-color);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-left: 1.5rem;
+}
+
+.time {
+  margin: 2rem;
+  font-weight: bold;
+
+  font-size: 1.5rem;
+  color: #999999;
+}
+
+.img-flame {
+  overflow: hidden;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  transition: transform .4s ease;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+.card:hover img {
+  transform: scale(1.1);
 }
 
 .arrow:hover {
@@ -316,7 +271,7 @@ h2.title {
 }
 
 .lean-category h2 {
-  font-size: min(5vw, 80px);
+  font-size: min(4.5vw, 80px);
   margin: 2rem;
 }
 

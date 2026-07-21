@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(195, 255, 0);
+    --sub-color: #b49327;
+    --bg-color: #323232;
+    --text-color: rgb(146, 187, 0);
+    --accent-color: #ffb703;
+    --dark-color: rgb(36, 62, 0);
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+body {
+    background-color: rgb(50, 50, 50);
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.site-top {
+    background-image: url("../images/top.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 10rem;
+    padding: 1rem;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+.site-top h1 {
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.5rem 0.5rem #ee00ff7c;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    justify-items: center;
+    width: min(100%, 80rem);
+    height: fit-content;
+    margin-top: 1rem;
+    outline: 0.3rem solid var(--main-color);
+
+    box-shadow: 1rem 1rem 0rem #6a1ee6af;
+}
+
+.top {
+    margin: 4rem;
+    margin-top: 3rem;
+
+}
+
+.top h2 {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    margin-left: min(36rem, 7vw);
+}
+
+.title-container {
+    display: flex;
+    justify-content: left;
+}
+
+.top p{
+    margin-left: 3rem;
+    font-size: 2.5rem;
+    color: white;
+}
+
+#wide-hr {
+    width: 100%;
+    background: var(--main-color);
+    margin-top: 0.5rem;
+}
+
+.time {
+    font-size: min(1.5rem, 3vw);
+    color: #d3d3d3;
+    margin-left: min(46rem, 9vw);
+    margin-bottom: 8rem;
+}
+
+.bottom {
+    margin: 2rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-left: min(36rem, 7vw);
+}
+
+.bottom img {
+    margin: 2rem;
+    margin-top: 5rem;
+    width: min(70vw, 70rem);
+    border-radius: 1rem;
+}
+
+.button-container {
+    margin-top: 3rem;
+    justify-items: center;
+    text-align: center;
+}

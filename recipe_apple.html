@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3DCG FIRST STEP | リンゴの作り方</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/recipe.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="menu">
+        <a href="index.html">TOP</a>
+        <a href="learning_list.html">LEARNING</a>
+        <a href="recipe_list.html">RECIPE</a>
+        <a href="addon.html">ADD-ON</a>
+        <a href="hotkeys.html">HOTKEYS</a>
+    </nav>
+
+    <div class="site-top">
+        <h1>3DCG FIRST STEP</h1>
+    </div>
+
+    <div class="video-container">
+        <video autoplay muted controls playsinline>
+            <source src="videos/apple.mp4" type="video/mp4">
+            お使いのブラウザは動画に対応していません。
+        </video>
+    </div>
+
+    <div class="top">
+        <h2>リンゴの作り方</h2>
+        <hr id="wide-hr">
+    </div>
+    <div class="time">
+        所要時間：約10分
+    </div>
+    <div class="step-indent">
+        <span class="step-num">
+            STEP1
+        </span>
+        <h2>
+            立方体を細分化する
+        </h2>
+    </div>
+    <hr>
+    <div class="step-contents">
+        <br>
+        <img src="images/.jpg" alt="blenderの画面">
+        <br>
+        1.立方体を選択し右側スパムマークのモディファイアープロパティを選択します。
+        <br>
+        <img src="images/.jpg" alt="blenderの画面">
+        <br>
+        2.モディファイアーを追加から<br>「生成」>「<a id="modifier" href="learn_subdivision.html">サブディビジョンサーフェス</a>」<br>を選択し、分割数を3に設定します。
+        <br>
+        <img src="images/.jpg" alt="blenderの画面">
+        <br>
+        3.オブジェクトを右クリックして<a id="modeling" href="learn_smooth.html">スムーズシェード</a>を適用します。
+    </div>
+    <div class="step-indent">
+        <span class="step-num">
+            STEP2
+        </span>
+        <h2>
+            実の部分を作る
+        </h2>
+    </div>
+    <hr>
+    <div class="step-contents">
+        <br>
+        <img src="images/.jpg" alt="blenderの画面">
+        <br>
+        1.Tabキーで編集モードに入り、<span class="key">Ctrl</span>+<span class="key">R</span>で<a id="modeling" href="learn_loopcut.html">ループカット</a>を挿入します。
+        <br>
+        <img src="images/.jpg" alt="blenderの画面">
+        <br>
+        2.<span class="key">G</span>移動と<span class="key">S</span>スケールを行い、上の画像のような形を作ります。
+        <br>
+        <img src="images/.jpg" alt="blenderの画面">
+        <br>
+        3.上面と底面に<span class="key">I</span>で<a id="modeling" href="learn_insert.html">面の差し込み</a>を行い、<span class="key">G</span>+<span class="key">Z</span>で中心に近づけます。
+
+    </div>
+    <div class="step-indent">
+        <span class="step-num">
+            STEP3
+        </span>
+        <h2>
+            ヘタの部分を作る
+        </h2>
+    </div>
+    <hr>
+    <div class="step-contents">
+        <br>
+        <img src="images/.jpg" alt="blenderの画面">
+        <br>
+        1.上面の差し込まれた面を<span class="key">E</span>で<a id="modeling" href="learn_extrusion.html">押し出し</a>します。
+        <br>
+        <img src="images/.jpg" alt="blenderの画面">
+        <br>
+        2.ヘタ部分の根元を<span class="key">Alt</span>+左クリックで<a id="modeling" href="learn_loop.html">ループ選択</a>し、右側のサイドバーから<a id="modeling" href="learn_crease.html">クリース</a>を1.0に設定します。<br>
+        面選択モードに移り、上面も同じようにクリースを1.0にします。
+        <br>
+        <img src="images/.jpg" alt="blenderの画面">
+        <br>
+        3.<span class="key">Ctrl</span>+<span class="key">R</span>で<a id="modeling" href="learn_loopcut.html">ループカット</a>をを追加し、ヘタっぽい形に調整します。
+
+    </div>
+    <div class="step-indent">
+        <span class="step-num">
+            STEP4
+        </span>
+        <h2>
+            マテリアルで色と質感を付ける
+        </h2>
+    </div>
+    <hr>
+    <div class="step-contents">
+        <br>
+        <img src="images/.jpg" alt="blenderの画面">
+        <br>
+        1.右側のマテリアルプロパティの+でマテリアルスロットを追加しマテリアルを新規作成したら、ヘタの部分をすべて選択し「割り当て」を押します。
+        <br>
+        <img src="images/.jpg" alt="blenderの画面">
+        <br>
+        2.<a id="material" href="#learn_shadernode.html">シェーダーエディター</a>でスロット1を選んだ状態で、<a id="material" href="#learn_pBSDF.html">プリンシプルBSDF</a>のベースカラーを赤色にし、粗さを0.3程度に設定します。
+        <br>
+        <img src="images/.jpg" alt="blenderの画面">
+        <br>
+        3.スロットをスロット2に変更し、ベースカラーを茶色に設定します。
+
+    </div>
+
+    <div class="bottom">
+        完成！
+        <hr id="wide-hr">
+        <img src="images/apple.jpg" alt="完成画像">
+        <div class="button-container">
+            <a href="lean-rendering.html" class="button">書き出し方法</a>
+
+            <a href="recipe_list.html" class="button">レシピ一覧へ</a>
+        </div>
+    </div>
+    <footer>
+        web演習最終課題にて作成
+    </footer>
+</body>
